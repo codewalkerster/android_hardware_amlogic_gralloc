@@ -181,7 +181,7 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
 endif
 endif
 
-LOCAL_MODULE := gralloc.amlogic
+LOCAL_MODULE := gralloc.$(TARGET_PRODUCT)
 
 LOCAL_MODULE_TAGS := optional
 LOCAL_MULTILIB := both
