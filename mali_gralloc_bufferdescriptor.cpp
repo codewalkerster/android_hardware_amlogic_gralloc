@@ -264,7 +264,6 @@ int mali_gralloc_validate_buffer_size(buffer_handle_t buffer, gralloc1_buffer_de
 		return GRALLOC1_ERROR_BAD_VALUE;
 	}
 
-
 	if (descriptorInfo->layerCount < 0)
 	{
 		AERR("Invalid layer_count %d, returning error", descriptorInfo->layerCount);

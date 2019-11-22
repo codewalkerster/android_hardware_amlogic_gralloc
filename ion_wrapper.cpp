@@ -1,5 +1,5 @@
 /*
- *  ion_wrapper.c
+ *  ion.c
  *
  * Memory Allocator functions for ion
  *
@@ -103,7 +103,7 @@ int ion_map(int fd, ion_user_handle_t handle, size_t length, int prot, int flags
             unsigned char** ptr, int* map_fd) {
     if (!ion_is_legacy(fd)) return -EINVAL;
     int ret;
-    unsigned char *tmp_ptr;
+    unsigned char* tmp_ptr;
     struct ion_fd_data data = {
         .handle = handle,
     };
